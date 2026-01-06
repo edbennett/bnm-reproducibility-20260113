@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Empathetic Software Development</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sa2c.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,40 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-fragment="0" style="padding-top: -100px; height: 200px">
+					<h2 style="padding-top: -200px;" class="fragment collapsible" data-fragment-index="0">
+						Practical Software Engineering Techniques to Minimise Developer Onboarding and Refamiliarisation Effort
+					</h2>
+					<h2 style="padding-top: 100px" class="fragment collapsible" data-fragment-index="1">
+						Empathetic Software Development
+					</h2>
+					<h3>
+						Ed Bennett
+					</h3>
+					<p style="padding-top: 30px">Building New Methods workshop<br>Queen Mary, University of London, 2026-01-14</p>
+					<p>Slides: <a href="https://edbennett.github.io/bnm-empathetic-20260114">https://edbennett.github.io/bnm-empathetic-20260114</a> • <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a><br>
+					<span style="opacity: 50%; font-style: italic;">Press <span style="font-family: monospace; font-style: normal;">S</span> for speaker notes</span></p>
+					<div style="padding-top: 0px;">
+						<a href="https://www.swansea.ac.uk">
+							<img class="plain title-image" src='images/su-vstack-white.svg' alt="Swansea University logo">
+						</a>
+						<a href="https://sa2c.swansea.ac.uk">
+							<img class="plain title-image" src='images/sa2c-white.svg' alt="SA2C logo">
+						</a>
+						<a href="https://telos-collaboration.github.io">
+							<img class="plain title-image" src='images/telos-logo-white.svg' alt="TELOS Collaboration">
+						</a>
+						<a href="https://stfc.ukri.org">
+							<img class="plain title-image" src='images/stfc.svg' alt="Science and Technologies Facilities Council">
+						</a>
+					</div>
+				</section>
+
+				<section data-markdown="slides/slides.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$" data-separator-notes="^Notes:"> </section>
+				<section>
+					<h1>Thank you</h1>
+				</section>
+				<section data-markdown="slides/backup.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$" data-separator-notes="^Notes:" data-visibility="uncounted"> </section>
 			</div>
 		</div>
 
@@ -25,15 +57,18 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				width: 1366,
+				height: 768,
+				// slideNumber: 'c/t',
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
 			});
 		</script>
 	</body>
