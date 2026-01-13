@@ -482,7 +482,7 @@ run by CERN.
 - If your workflows aren't automated,<br>
   human error is present in your results
   
-- If your data and workflows aren't public,<br>
+- If your data and software aren't public,<br>
   can reviewers and readers trust them?
 
 -
